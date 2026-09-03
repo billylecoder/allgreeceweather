@@ -9,9 +9,9 @@
     </header>
 
     {{ with .Params.image }}
-      <figure class="article-hero">
-        <img src="{{ . | relURL }}" alt="" decoding="async">
-      </figure>
+    <figure class="article-hero">
+      <img src="{{ . | absURL }}" alt="{{ $.Title }}" decoding="async">
+    </figure>
     {{ end }}
 
     <div class="article-body">
