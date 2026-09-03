@@ -50,7 +50,7 @@
   document.querySelectorAll(".post-date").forEach(function (element) {
       const date = new Date(element.getAttribute("datetime"));
 
-      element.textContent = new Intl.DateTimeFormat(undefined, {
+      element.textContent = new Intl.DateTimeFormat("en-GB", {
           day: "2-digit",
           month: "2-digit",
           year: "numeric",
