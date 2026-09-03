@@ -1,5 +1,29 @@
+# Hugo generated files
 /public/
-/resources/_gen/
+/resources/
+
+# Hugo lock file
+.hugo_build.lock
+
+# Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Editor / IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
 *.swp
+*.swo
+
+# Node dependencies (only relevant if you ever add Node tooling)
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
