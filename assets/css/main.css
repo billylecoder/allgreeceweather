@@ -38,10 +38,6 @@ a { color: inherit; }
 }
 .header-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; letter-spacing: -.02em; }
-.brand-mark {
-  min-width: 34px; height: 34px; padding: 0 7px; border-radius: 10px; display: grid; place-items: center;
-  background: var(--accent); color: white; font-size: .72rem; font-weight: 900; letter-spacing: -.03em;
-}
 .site-nav { display: flex; gap: 24px; }
 .site-nav a { color: #cbd5e1; text-decoration: none; font-size: .95rem; }
 .site-nav a:hover, .site-nav a:focus-visible { color: #fff; }
