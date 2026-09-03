@@ -7,7 +7,11 @@
     {{ end }}
   </a>
   <div class="post-card-body">
-    <div class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time></div>
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "02/01/2006 15:04" }}
+      </time>
+    </div>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .Description | default (.Summary | plainify) }}</p>
     <a class="text-link" href="{{ .RelPermalink }}">Διαβάστε το άρθρο <span aria-hidden="true">→</span></a>
