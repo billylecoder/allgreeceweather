@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Example weather image</title>
+  <desc id="desc">A simple blue abstract sky illustration used as a placeholder.</desc>
+  <rect width="1600" height="1000" fill="#eef5ff"/>
+  <circle cx="1250" cy="250" r="120" fill="#ffffff" opacity="0.92"/>
+  <g fill="#ffffff" opacity="0.96">
+    <ellipse cx="630" cy="470" rx="240" ry="95"/>
+    <ellipse cx="850" cy="470" rx="190" ry="80"/>
+    <ellipse cx="500" cy="520" rx="160" ry="65"/>
+  </g>
+  <path d="M0 760 C350 680 620 820 900 740 C1160 670 1380 760 1600 700 V1000 H0 Z" fill="#d6e7ff"/>
+  <text x="80" y="900" font-family="system-ui, sans-serif" font-size="54" font-weight="700" fill="#18324f">Replace me with your first photo</text>
+</svg>

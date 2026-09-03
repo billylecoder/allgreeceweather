@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">ΑΡΧΕΙΟ</p>
+    <h1>Άρθρα</h1>
+    <p>Όλα τα δημοσιευμένα άρθρα, από το νεότερο στο παλαιότερο.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="post-grid">
+      {{ range .Paginator.Pages }}
+        {{ partial "post-card.html" . }}
+      {{ else }}
+        <p>Δεν υπάρχουν ακόμη άρθρα.</p>
+      {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+{{ end }}

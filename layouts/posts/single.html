@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="article">
+  <div class="container article-container">
+    <header class="article-header">
+      <a class="back-link" href="{{ "posts/" | relURL }}">← Όλα τα άρθρα</a>
+      <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time></p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="article-lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ with .Params.image }}
+      <figure class="article-hero">
+        <img src="{{ . | relURL }}" alt="" decoding="async">
+      </figure>
+    {{ end }}
+
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}
