@@ -48,11 +48,13 @@
 
   <script>
   document.querySelectorAll(".post-date").forEach(function (element) {
-      const date = new Date(element.getAttribute("datetime"));
+      const timestamp = Number(element.dataset.timestamp);
 
-      if (isNaN(date.getTime())) {
+      if (!timestamp) {
           return;
       }
+
+      const date = new Date(timestamp * 1000);
 
       const formatted = new Intl.DateTimeFormat("en-GB", {
           day: "2-digit",

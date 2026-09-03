@@ -4,7 +4,7 @@
     <header class="article-header">
       <a class="back-link" href="{{ "posts/" | relURL }}">← Όλα τα άρθρα</a>
       <p class="post-meta">
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        <time class="post-date" data-timestamp="{{ .Date.Unix }}">
             {{ .Date.Format "02/01/2006 15:04" }}
         </time>
       </p>
